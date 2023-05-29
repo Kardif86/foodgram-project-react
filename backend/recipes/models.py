@@ -8,6 +8,8 @@ from colorfield.fields import ColorField
 
 User = get_user_model()
 
+LEN_OF_TEXT = 15
+
 
 class Tag(models.Model):
     """Модель тега"""
@@ -98,7 +100,7 @@ class Recipe(models.Model):
         verbose_name_plural = 'Рецепты'
 
     def __str__(self):
-        return self.text[:15]
+        return self.text[:LEN_OF_TEXT]
 
 
 class IngredientContained(models.Model):
