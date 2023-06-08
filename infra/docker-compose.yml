@@ -11,7 +11,7 @@ services:
       - ./.env
 
   backend:
-    image: lanaremenyuk/foodgram:latest
+    image: kardif86/foodgram:latest
     restart: always
     command: >
       bash -c "python manage.py migrate &&
@@ -28,7 +28,7 @@ services:
       - ./.env
 
   frontend:
-    image: lanaremenyuk/foodgram_frontend:latest
+    image: kardif86/foodgram_frontend:latest
     volumes:
       - ../frontend/:/app/result_build/
     depends_on:
