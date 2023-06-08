@@ -1,4 +1,4 @@
-kardif86.hopto.org
+kardif86.ddns.org
 
 ## Продуктовый помощник: сервис с рецептами
 
