@@ -11,7 +11,7 @@ services:
       - ./.env
 
   backend:
-    image: kardif86/foodgram:latest
+    image: kardif86/foodgram_backend:latest
     restart: always
     command: >
       bash -c "python manage.py migrate &&
